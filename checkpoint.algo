@@ -1,0 +1,46 @@
+VAR
+
+    word : string;
+    sentence: string;
+    i : integer:=0;
+    words_number : integer:=0;
+    vowels_number : integer := 0;
+    vowels : CHAR := a,e,u,i,o,A,E,U,I,O;
+
+
+
+BEGIN
+/number of characters/
+    i = 0 ;
+    read (word);
+    WHILE (word[i] <> ".") DO
+        i++
+    END_WHILE
+    write(i)
+
+/number of words/
+    i = 0 ;
+    read (sentence);
+    WHILE (sentence[i] <> ".") DO
+        IF (sentence[i]==" ") THEN
+        words_number= words_number+1
+        END_IF
+        i++
+    END_WHILE
+    words_number=words_number+1
+    write(words_number)
+
+/number of vowels/
+    i = 0 ;
+    read (sentence);
+    WHILE (sentence[i] <> ".") DO
+        IF (sentence[i] == vowels) THEN
+            vowels_number=vowels_number + 1
+        END_IF
+        i++
+    END_WHILE
+    write(vowels_number)
+
+END
+
+
